@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: "Tilt Warp", cursive;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/*header*/
+
+header.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-block: 1rem;
+  z-index: 999;
+}
+
+header.navbar-container .logo img {
+  width: 80px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #0e0c0c;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li .active,
+header.navbar-container .nav-list li:hover a {
+  background-color: #0e0c0c;
+  color: white;
+}
+/*End Header*/
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background-color: #0e0c0c;
+}
+
+main .content .content-image {
+  flex: 1;
+  display: flex;
+  margin-left: 70px;
+}
+
+main .content .content-image img {
+  margin: auto;
+  min-width: 250px;
+  width: 500px;
+}
+
+main .content .content-description {
+  flex: 1 1;
+  color: white;
+  margin-left: 20px;
+}
+
+main .content .content-description .title {
+  font-size: 3.5rem;
+  margin-block: 1rem;
+}
+
+main .content .content-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+main .content .content-description .button {
+  padding: 0.8rem 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+main .content .content-description .button:hover {
+  border: 3px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+main .content-explanation {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-top: 20%;
+  flex-direction: column;
+}
+
+main .content-explanation .card {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 50px;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+main .content-explanation img {
+  width: 400px;
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+main .content-explanation p,
+main .video-section p {
+  line-height: 1.7rem;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+main .content .content-description .title {
+  font-size: 3.5rem;
+  margin-block: 1rem;
+}
+
+main .content .content-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+main .video-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  flex-direction: column;
+}
+main .video-section h1 {
+  font-size: 3rem;
+  margin-block: 1rem;
+}
+
+main .video-section iframe {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+main .kontak {
+  margin-top: 20%;
+  margin-bottom: 40px;
+}
+main .kontak h1 {
+  font-size: 3rem;
+}
+
+main aside .aboutme {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 3px solid #0e0c0c;
+  border-radius: 15px;
+}
+
+main aside .aboutme .content-image {
+  flex: 1;
+  display: flex;
+  margin-right: 90px;
+}
+
+main aside .aboutme .content-image img {
+  margin: auto;
+  min-width: 250px;
+  width: 500px;
+}
+
+main aside .aboutme .content-description {
+  flex: 1 1;
+  color: #0e0c0c;
+  margin-right: 45px;
+}
+
+main aside .aboutme .content-description .title {
+  font-size: 3.5rem;
+  margin-block: 1rem;
+}
+
+main aside .aboutme .content-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+main aside {
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .social-media {
+  inset-block: 0;
+  inset-inline-end: 0;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  position: fixed;
+}
+
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border: 3px solid #0e0c0c;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #0e0c0c;
+  transition: all 0.1s ease-in-out;
+}
+
+#scrollup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  color: #0e0c0c;
+  background-color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 99px;
+}
+
+#scrollup:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+footer {
+  text-align: center;
+  background-color: #0e0c0c;
+  color: white;
+  width: 100%;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main .content,
+  main aside .aboutme {
+    flex-direction: column;
+    gap: 2rem;
+    background-color: transparent;
+  }
+
+  main aside .aboutme {
+    padding: 10px;
+    align-items: center;
+  }
+
+  main .content .content-description .title,
+  main aside .aboutme .content-description .title {
+    font-size: 3rem;
+    color: #0e0c0c;
+  }
+
+  main .content .content-description p,
+  main aside .aboutme .content-description p {
+    font-size: 1rem;
+    color: #0e0c0c;
+  }
+
+  main .content .content-description .button {
+    background-color: #0e0c0c;
+    color: white;
+  }
+
+  main .content .content-description .button:hover {
+    border: 3px solid white;
+    color: white;
+  }
+
+  main .content .content-image {
+    order: -1;
+  }
+
+  main aside .social-media {
+    width: 0%;
+  }
+}
